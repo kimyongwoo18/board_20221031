@@ -14,6 +14,7 @@
 <body>
 <a href="/board/save">글 작성</a>
 <a href="/board/">목록출력</a>
+<a href="/board/paging">페이징목록</a>
 </body>
 </html>
 <%-- 글작성             회원가입

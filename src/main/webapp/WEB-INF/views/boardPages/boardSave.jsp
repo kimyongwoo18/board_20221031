@@ -33,13 +33,13 @@
 <body>
 <jsp:include page="../layout/header.jsp" flush="false"></jsp:include>
 <div class="container" id="save-form">
-  <form action="/board/save" name="saveForm" method="post">
+  <form action="/board/save" name="saveForm" method="post" enctype="multipart/form-data">
     <input type="text" name="boardTitle" id="boardTitle" placeholder="글제목"  class="form-control mb-1">
     <input type="text" name="boardWriter" id="boardWriter" placeholder="작성자" class="form-control mb-1">
     <input type="password" name="boardPass" id="boardPass" placeholder="비밀번호" class="form-control mb-1">
     <textarea name="boardContents" id="boardContents" cols="30" rows="10" placeholder="내용을 입력하세요" class="form-control mb-2"></textarea>
+    <input type="file" class="form-control" name="boardFile">
     <input type="button" value="작성완료" onclick="save()" class="btn btn-primary">
-
   </form>
 </div>
 </body>
